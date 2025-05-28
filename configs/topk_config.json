@@ -1,0 +1,9 @@
+{
+  "img_root": "/mnt/storage/home/zy0058@students.ad.unt.edu/datasets/iu_xray/images",
+  "db_json": "/mnt/storage/home/zy0058@students.ad.unt.edu/rrg/data/retrieval_db.json",
+  "test_json": "/mnt/storage/home/zy0058@students.ad.unt.edu/rrg/data/iuxray_test.json",
+  "model_name_or_path": "hf-hub:thaottn/OpenCLIP-resnet50-CC12M",
+  "checkpoint_path": "/mnt/storage/home/zy0058@students.ad.unt.edu/rrg/retriever_save_mimic/epoch_360.pt",
+  "output_path": "/mnt/storage/home/zy0058@students.ad.unt.edu/rrg/outputs/topk/out.json",
+  "fixed_k": 5
+}

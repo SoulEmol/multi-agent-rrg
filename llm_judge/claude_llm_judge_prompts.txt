@@ -1,0 +1,2400 @@
+========== Sample 1 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Both lungs are clear and expanded. Heart and mediastinum normal.
+
+Report A:
+The heart is normal in size. The mediastinum is unremarkable. The lungs are clear without focal consolidation, effusion, or pneumothorax. Biapical scarring is present. Degenerative changes of the thoracic spine are noted. Granulomatous sequela are observed.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 2 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Lungs are clear. No pneumothorax or pleural effusion. Normal heart and mediastinal contours. Normal pulmonary vasculature. Bony thorax intact.
+
+Report A:
+The heart is normal in size. The mediastinum is unremarkable. There is no pleural effusion, pneumothorax, or focal airspace disease. The lungs are clear. Degenerative changes are present in the thoracic spine.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 3 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size and mediastinal contours appear within normal limits. No focal pulmonary opacity, pleural effusion or pneumothorax. There is levoscoliosis of the thoracic spine.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+The heart is normal in size. The mediastinum is stable. The lungs are clear.
+
+---
+
+
+========== Sample 4 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiac contours are normal. The lungs are clear. Thoracic spondylosis. Partial fusion of 2 vertebral bodies near the thoracolumbar junction.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Heart size is normal. The mediastinum is unremarkable. No pleural effusion or pneumothorax is present. There is no focal airspace disease or alveolar consolidation. Lungs are clear without evidence of acute infiltrate. The trachea is midline. Visualized bony structures show mild to chronic degenerative changes within the spine. No acute bony abnormalities are noted.
+
+---
+
+
+========== Sample 5 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart size is normal. The mediastinal contour is within normal limits. The lungs are free of any focal infiltrates. There are no nodules or masses. No visible pneumothorax. No visible pleural fluid. The XXXX are grossly normal. There is no visible free intraperitoneal air under the diaphragm.
+
+Report A:
+Heart size is normal. Lungs are clear. No pneumothorax. No pleural effusion. Degenerative changes of the midthoracic spine are noted.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 6 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size and pulmonary vascularity within normal limits. No focal infiltrate, pneumothorax or pleural effusion identified.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Cardiac silhouette is enlarged, consistent with cardiomegaly. No evidence of focal airspace disease, pneumothorax, or large pleural effusion. Lungs are hypoinflated with central bronchovascular crowding. No overt pulmonary edema is observed. No acute bony findings. Degenerative changes of the thoracic spine are noted. Patient appears morbidly obese. Limited exam due to underpenetrated technique.
+
+---
+
+
+========== Sample 7 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. There are no acute bony findings.
+
+Report A:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, major blood vessels, and other structures.
+
+Report B:
+The cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are normally inflated and clear. Osseous structures are within normal limits for patient age. A left-sided hemodialysis catheter is present with its distal tip at the right atrium. There is no focal opacity. There is no pneumothorax. No large pleural effusion.
+
+---
+
+
+========== Sample 8 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+There are low lung volumes with bronchovascular crowding. There is patchy left lower lobe airspace disease. There are XXXX opacities in the right mid lung, XXXX subsegmental atelectasis. No significant pleural effusion. No pneumothorax. Heart size is within normal limits. There is aortic atherosclerotic vascular calcification.
+
+Report A:
+Lung volumes are low with central bronchovascular crowding and patchy basilar atelectasis. Elevation of the right hemidiaphragm is noted. Patchy opacities are present at the right base. The left lung is clear. There is blunting of the bilateral costophrenic angles. Heart size is at the upper limits of normal. Aortic and right hilar calcifications are present, suggestive of a previous granulomatous process. Degenerative changes are observed in the thoracic spine. No evidence of pneumothorax or pleural effusion. The cardiomediastinal silhouette and vasculature are within normal limits for size and contour.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 9 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Lungs are clear bilaterally.There is no focal consolidation, pleural effusion, or pneumothoraces. Cardiomediastinal silhouette is within normal limits. XXXX are unremarkable.
+
+Report A:
+The chest X-ray shows low lung volumes. The heart size is normal in some reports, while others suggest an enlarged cardiac silhouette, potentially accentuated by low lung volumes and eventration of the anterior right hemidiaphragm. No definitive cardiomegaly or pericardial effusion is confirmed. The trachea is midline. Lungs are clear of focal airspace disease, pneumothorax, and pleural effusion. There is no evidence of overt pulmonary edema. Degenerative changes are present in the thoracic spine. No acute bony findings are observed. The patient is morbidly obese.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 10 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The XXXX examination consists of frontal and lateral radiographs of the chest. There are diminished lung volumes. Right greater than left bilateral hilar and subcarinal adenopathy is again seen. The cardiac silhouette is prominent but probably artifactually large due to diminished lung volumes. No focal consolidation, pleural effusion, or pneumothorax identified. There is a deformity of the left clavicle compatible with remote XXXX.
+
+Report A:
+Heart size is within normal limits. Mediastinal contours are normal. No focal airspace consolidation. No pleural effusion or pneumothorax. Degenerative changes are present in the thoracic spine.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 11 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size and mediastinal contour are normal. Pulmonary vascularity is normal. Lungs are clear. No pleural effusions or pneumothoraces. Degenerative changes in the thoracic spine.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Heart size is normal. Mediastinal and hilar contours are within normal limits. The lungs are clear with no focal airspace consolidations. No pleural effusion or pneumothorax is present. Mild lung hyperexpansion is noted. The trachea is midline. Pulmonary vascularity is normal. No osseous abnormalities are identified. Lucent pulmonary parenchyma is consistent with emphysema, unchanged from prior examinations. A vague density in the medial right lung apex is stable and likely represents overlying shadows of bony structures.
+
+---
+
+
+========== Sample 12 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Cardio mediastinal silhouette is unremarkable. Visualized osseous structures of the thorax are without acute abnormality.
+
+Report A:
+The lungs are clear. No pleural effusion, focal consolidation, or pneumothorax is identified. The heart size is normal. The mediastinum is stable. There is a tortuous and atherosclerotic calcified thoracic aorta. Eventration of the right hemidiaphragm is stable. Multilevel degenerative disc disease of the thoracolumbar spine is noted without acute osseous abnormality.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 13 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size normal. Lungs are clear. XXXX are normal. No pneumonia, effusions, edema, pneumothorax, adenopathy, nodules or masses.
+
+Report A:
+The heart size and mediastinal contours are normal. The lungs are clear with no pleural effusion or pneumothorax. No focal airspace consolidation is observed. Mild degenerative changes of the thoracic spine are noted. Sequela of prior granulomatous disease is present. Lung volumes are low with central bronchovascular crowding and patchy basilar atelectasis. A vague lucency is present in the left rib 7 anteriorly.
+
+Report B:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs or the mediastinum, which is the central compartment of the thoracic cavity containing the heart, great vessels, trachea, and other structures.
+
+---
+
+
+========== Sample 14 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Stable appearance of the cardiomediastinal silhouette. There is no pneumothorax, pleural effusion, or focal airspace consolidation.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Mediastinal contours and heart size are within normal limits. Lungs are clear with no focal consolidation, pneumothorax, or pleural effusion. No bony abnormality is noted. There is a vague density in the right mid lung, likely related to the scapular tip and superimposed ribs, not visualized on the lateral exam. Degenerative changes are present in the midthoracic spine.
+
+---
+
+
+========== Sample 15 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The lungs and pleural spaces show no acute abnormality. Heart size and pulmonary vascularity within normal limits. .
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+The heart size is within normal limits. Mediastinal contours are stable. The lungs are clear of focal airspace disease. No pneumothorax is present. There is no pleural effusion. Degenerative changes are noted in the spine. A large hiatal hernia is observed. Mild chronic opacities are present in the left lung base with probable small residual effusion. Postsurgical changes of the left hemithorax are stable.
+
+---
+
+
+========== Sample 16 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal in size. The mediastinum is unremarkable. Small nodule in the right upper lung is stable. The lungs are otherwise clear.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Heart size is normal. Mediastinum is unremarkable. No pleural effusion or pneumothorax. No focal airspace consolidation. Lungs are hyperexpanded. Degenerative changes are present in the thoracic spine.
+
+---
+
+
+========== Sample 17 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The lungs are clear without evidence of focal airspace disease. There is no evidence of pneumothorax or large pleural effusion. The cardiac and mediastinal contours are within normal limits. The XXXX are unremarkable.
+
+Report A:
+The heart is normal in size. The mediastinum is unremarkable. The lungs are hypoinflated but clear. There is no focal air space opacity, pleural effusion, or pneumothorax. Multilevel degenerative changes are present in the thoracic spine.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 18 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiomediastinal silhouette and pulmonary vasculature are within normal limits. There is no pneumothorax or pleural effusion. There are no focal areas of consolidation.
+
+Report A:
+Heart size is normal. Mediastinum is unremarkable. Lungs are clear of consolidation. No pleural effusion or pneumothorax. Bony thorax is intact. Mild degenerative changes are present in the thoracic spine, consistent with minimal spondylosis. Stable elevation of the left hemidiaphragm. Stable appearance of the chest with no findings of disease progression.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 19 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size mildly enlarged. No alveolar consolidation, no findings of pleural effusion or pulmonary edema. No pneumothorax. S-shaped spine curvature noted.
+
+Report A:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs or the mediastinum, which is the central compartment of the thoracic cavity containing the heart, great vessels, trachea, and other structures.
+
+Report B:
+The lungs are clear. The heart is normal in size. The mediastinum is stable. The cardiomediastinal silhouette and vasculature are within normal limits. Osseous structures are within normal limits for patient age. There is no pleural effusion.
+
+---
+
+
+========== Sample 20 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Lungs are hyperexpanded. No infiltrates or masses. The eventration of the left hemidiaphragm identified previously is largely unchanged since the previous computed tomogram. Pulmonary XXXX are normal.
+
+Report A:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, great vessels, trachea, and other structures.
+
+Report B:
+Heart size and mediastinal contours are within normal limits. No pleural effusion, pneumothorax, or focal airspace consolidation is observed. Lungs are clear. There is stable elevation of the left hemidiaphragm. Bony thorax is intact. Degenerative changes are noted in the spine, including minimal spondylosis of the lower thoracic spine and degenerative endplate changes. Evidence of prior granulomatous disease and cervical fusion is present.
+
+---
+
+
+========== Sample 21 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiomediastinal silhouette is normal. The lungs are clear. There is no pneumothorax or pneumomediastinum. Visualized bony structures are normal.
+
+Report A:
+Heart size is normal. The mediastinum is unremarkable. Lungs are clear. No pleural effusion or pneumothorax. No focal airspace disease or lung consolidation. Mild degenerative changes are present within the thoracic spine.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 22 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal in size. The aorta is tortuous and ectatic. The lungs are clear without focal airspace opacity, pleural effusion, or pneumothorax. The osseous structures are intact.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. This means that there are no visible abnormalities or issues in the lungs, pleura, or the heart and mediastinum regions.
+
+Report B:
+PA and lateral views of the chest were obtained. The cardiomediastinal silhouette is normal in size and configuration. The lungs are well aerated. There is no pneumothorax, pleural effusion, or focal air space consolidation. Mild degenerative changes of the thoracic spine are noted. There are no osseous abnormalities, although old right rib fractures are present.
+
+---
+
+
+========== Sample 23 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Changes of renal osteodystrophy are noted. Heart size and pulmonary vascularity appear within normal limits. The lungs are free of focal airspace disease. No pleural effusion or pneumothorax is seen.
+
+Report A:
+Lungs are clear. No pleural effusion or pneumothorax. Heart size is normal. Mediastinum is stable. Mild chronic degenerative changes are present in the spine. Prominent bilateral pericardial fat pads. Minimal patchy air space opacity within the lingula, favored as atelectasis.
+
+Report B:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, great vessels, trachea, and other structures.
+
+---
+
+
+========== Sample 24 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal in size and contour. The lungs are clear, without evidence of infiltrate. There is no pneumothorax or effusion.
+
+Report A:
+The lungs are clear without focal consolidation, effusion, or pneumothorax. Heart size is normal. Mediastinum is stable. Degenerative changes are noted in the thoracic spine.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 25 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart and mediastinum are unremarkable. The lungs are clear without infiltrate. There is no effusion or pneumothorax.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+The heart is normal in size. The mediastinum is unremarkable. The lungs are hypoinflated. No acute infiltrate is seen. No pleural effusion is present. Surgical clips are noted overlying the superior mediastinum. A retrocardiac density is compatible with a hiatal hernia. Bilateral breast prostheses are present.
+
+---
+
+
+========== Sample 26 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiomediastinal silhouette and pulmonary vasculature are within normal limits in size. The lungs are clear of focal airspace disease, pneumothorax, or pleural effusion. XXXX closure device demonstrated projecting over the right heart. There are no acute bony findings.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. There is no pleural effusion visible in the image.
+
+Report B:
+Right dual-lumen internal jugular central venous catheter with tip overlying the cavoatrial junction. Heart size is at the upper limits of normal. Lungs are clear bilaterally with no focal consolidation, pneumothorax, or pleural effusion. Patchy bibasilar airspace opacities noted, right greater than left. Mediastinum is stable with prominence consistent with history of sarcoid. Visualized osseous structures reveal no acute abnormalities. Presence of a single calcified granuloma in the right lung base. Retrocardiac lucency represents a large hiatal hernia, unchanged from prior. Cholecystectomy clips are present in the right upper quadrant of the abdomen. Small T-spine osteophytes are noted.
+
+---
+
+
+========== Sample 27 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Cardio mediastinal silhouette is unremarkable. Visualized osseous structures of the thorax are without acute abnormality.
+
+Report A:
+Heart size is normal. Mediastinum is unremarkable. Lungs are clear. No pleural effusion or pneumothorax. Degenerative changes in the spine are noted. Scattered calcified granulomas and surgical clips in the right upper quadrant of the abdomen are noted. There are no acute bony abnormalities.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 28 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal in size. The mediastinum is unremarkable. The lungs are clear.
+
+Report A:
+The heart is normal in size. The mediastinum is unremarkable. The lungs are clear. Multilevel degenerative changes of the thoracic spine are noted. Bihilar prominence is present. No pleural effusion is observed.
+
+Report B:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, major blood vessels, and other structures.
+
+---
+
+
+========== Sample 29 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+There are no acute osseous abnormalities. Degenerative changes throughout the thoracic spine. Normal heart size. Calcific aorta. Normal vascular markings. No focal area of consolidation, pleural effusion, or pneumothorax.
+
+Report A:
+The cardiomediastinal silhouette and vasculature are within normal limits for size and contour. Lung volumes are low with central bronchovascular crowding and patchy basilar atelectasis. No focal airspace consolidation, pleural effusion, or pneumothorax. Degenerative changes of the spine are noted.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 30 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiomediastinal silhouette is within normal limits for size and contour. The lungs are normally inflated without evidence of focal airspace disease, pleural effusion, or pneumothorax. Osseous structures are within normal limits for patient age..
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. There is no pleural effusion visible in the image.
+
+Report B:
+The heart and mediastinum are within normal limits. The lungs are clear. There is no pleural effusion or pneumothorax. There is no focal airspace opacity to suggest pneumonia. There are degenerative changes in the thoracic spine. The patient was shielded during the examination.
+
+---
+
+
+========== Sample 31 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size, mediastinal contour, and pulmonary vascularity are within normal limits. No focal consolidation, pleural effusion, or pneumothorax is identified. No acute osseous abnormality identified.
+
+Report A:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, major blood vessels, and other structures.
+
+Report B:
+The heart is normal in size. The mediastinum is stable. The lungs are clear. No focal airspace consolidations, pneumothorax, or pleural effusion. There are degenerative changes of the thoracic spine.
+
+---
+
+
+========== Sample 32 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart and lungs have XXXX XXXX in the interval. Both lungs are clear and expanded. Heart and mediastinum normal.
+
+Report A:
+The heart size is normal. The mediastinum is unremarkable. The lungs are clear with no focal airspace opacities, pneumothorax, or pleural effusion. There are no acute bony findings. Degenerative changes are noted in the thoracic spine. The patient appears morbidly obese, and there is a corticated bony density over the lateral aspect of the clavicle, possibly reflecting sequelae of an old injury.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 33 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The XXXX examination consists of supine and crosstable lateral radiographs of the chest. External monitor leads XXXX the thorax. The cardiomediastinal contours are within normal limits. Pulmonary vascularity is within normal limits. No focal consolidation, pleural effusion, or pneumothorax identified. The visualized osseous structures and upper abdomen are unremarkable.
+
+Report A:
+Lung volumes are low. Lungs are clear without focal infiltrates or air space disease. Heart size and mediastinum are normal. No pleural effusions or pneumothoraces. Persistent mild elevation of the right hemidiaphragm. Degenerative changes noted in the thoracic spine. Sternotomy sutures and bypass graft markers are present. Stable chronic appearing left basilar opacities. Osseous structures appear intact.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 34 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The trachea is midline. The cardio mediastinal silhouette is of normal size and contour. No evidence of focal infiltrate or effusion. Low lung volumes XXXX XXXX atelectasis and bronchovascular crowding. There is no pneumothorax. The visualized bony structures reveal no acute abnormalities. Lateral view reveals degenerative changes of the thoracic spine.
+
+Report A:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, major blood vessels, and other structures.
+
+Report B:
+Heart size and mediastinum are normal. No pleural effusion, pneumothorax, or focal airspace disease. Degenerative changes are present in the thoracic spine, described as mild and chronic in nature.
+
+---
+
+
+========== Sample 35 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Lungs are clear. No pleural effusions or pneumothoraces. heart and mediastinum are stable with normal sized heart. Degenerative changes in the spine.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Heart size is within normal limits. The mediastinum is stable. Lungs are hyperexpanded and clear without focal airspace consolidation, pleural effusion, or pneumothorax. Degenerative changes are present in the thoracic spine.
+
+---
+
+
+========== Sample 36 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart size is normal. Lungs are clear. There is no pleural line to suggest pneumothorax or costophrenic XXXX blunting to suggest large pleural effusion. Bony structures are within normal limits.
+
+Report A:
+Heart size and mediastinal contours are normal. No focal airspace consolidation is present. Lungs are clear. No pleural effusion or pneumothorax is observed. Degenerative changes of the thoracic spine are noted.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 37 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+2 images. The cardiac silhouette is enlarged. Thoracic aortic atherosclerotic calcifications are present. There are finding status post sternotomy and CABG. XXXX atelectasis or scar is noted within the left midlung. There is blunting of the left costophrenic XXXX. No pneumothorax.
+
+Report A:
+Cardiac silhouette is normal in size and configuration. Mediastinal contour is normal. No pleural effusion or pneumothorax is identified. Lungs are clear with no focal consolidation. There is a tortuous and atherosclerotic calcified thoracic aorta. Eventration of the right hemidiaphragm is stable. Multilevel degenerative disc disease is noted without acute osseous abnormality. Postsurgical changes are present at the gastroesophageal junction and epigastric region. Limited exam due to underpenetrated technique.
+
+Report B:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, great vessels, trachea, and other structures.
+
+---
+
+
+========== Sample 38 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal size. The mediastinum is unremarkable. There is no pleural effusion, pneumothorax, or focal airspace disease. There is a stable calcified granuloma within the left lower lobe. There are stable chronic degenerative changes of the thoracic spine.
+
+Report A:
+The heart and mediastinum are unremarkable, and the heart is normal in size. The lungs are clear without infiltrate. There is no pleural effusion or pneumothorax. The lungs are hyperinflated with biapical scarring noted.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. There is no pleural effusion visible in the image.
+
+---
+
+
+========== Sample 39 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size and mediastinal contours are normal in appearance. No consolidative airspace opacities. No radiographic evidence of pleural effusion or pneumothorax. Visualized osseous structures appear intact.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Heart size and mediastinal contours are normal. No pleural effusion or pneumothorax. No focal airspace disease is noted. Degenerative changes are present in the thoracic spine.
+
+---
+
+
+========== Sample 40 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Normal cardiomediastinal contours. No pneumothorax, pleural effusions or focal lung consolidation.
+
+Report A:
+The lungs are clear. The heart is normal in size. The mediastinum is stable. There is no pleural effusion. The mediastinal contours are normal, and the pleural spaces are clear. The skeletal structures and soft tissues are normal.
+
+Report B:
+The chest X-ray shows clear lungs and a normal mediastinum. This means that there are no visible abnormalities or issues in the lungs and the mediastinum, which is the central compartment of the thoracic cavity containing the heart, major blood vessels, and other structures.
+
+---
+
+
+========== Sample 41 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Cardiomediastinal silhouettes are within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Bony thorax is unremarkable.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+The heart and mediastinum are normal in size and contour. There is no pleural effusion or pneumothorax. No focal airspace opacity is present to suggest pneumonia. Lung volumes are low with central bronchovascular crowding. The lungs are clear of focal airspace disease. Degenerative changes are noted in the thoracic spine. Bony structures are otherwise within normal limits. The patient appears morbidly obese, which may contribute to the observed low lung volumes.
+
+---
+
+
+========== Sample 42 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The cardiac silhouette is borderline enlarged. Otherwise, there is no focal opacity. Mediastinal contours are within normal limits. There is no large pleural effusion. No pneumothorax.
+
+Report A:
+The lungs are clear without focal airspace disease, pneumothorax, or pleural effusion. Heart size is within normal limits. The cardiomediastinal silhouette and pulmonary vasculature are normal. There is mild tortuosity of the descending thoracic aorta. Degenerative changes are noted in the thoracic spine, including mild degenerative endplate changes and scoliotic curvature. No acute bony abnormalities are present. There is prominence of the superior mediastinum, which may be partially due to a known thyroid mass.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 43 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart is normal in size and contour. There is a vague area of airspace disease identified within the right midlung on the PA view. This is not well-demonstrated on the lateral view. There is no pneumothorax or effusion.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. There is no pleural effusion visible in the image.
+
+Report B:
+The heart is normal in size. The mediastinum is unremarkable. There is no pleural effusion or pneumothorax. The lungs are clear of focal airspace disease. Mild degenerative changes are present in the spine. A large hiatal hernia is noted.
+
+---
+
+
+========== Sample 44 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Stable cardiomediastinal silhouette. No focal pulmonary opacity, pleural effusion or pneumothorax. No acute bony abnormality.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+The cardiac silhouette is enlarged. Lungs are hypoinflated with central bronchovascular crowding. No evidence of overt pulmonary edema. Lungs are clear of focal airspace disease, pneumothorax, and pleural effusion. No focal airspace opacities to suggest pneumonia. Mediastinal contours are normal. There are degenerative changes of the thoracic spine. No acute bony findings. Patient appears morbidly obese.
+
+---
+
+
+========== Sample 45 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size within normal limits. No focal airspace disease. No pleural effusion. No pneumothorax.
+
+Report A:
+Both lungs are clear and expanded. Heart and mediastinum are normal.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 46 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The heart size and mediastinal contours appear within normal limits. No focal airspace consolidation, pleural effusion or pneumothorax. No acute bony abnormalities.
+
+Report A:
+Heart size is normal. The trachea is midline. No pneumothorax. No pleural effusion. No acute focal airspace opacities. Low lung volumes noted. Degenerative changes in the thoracic spine. Question patchy opacity at the left base. Small right effusion.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 47 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+The lungs are clear bilaterally. Specifically, no evidence of focal consolidation, pneumothorax, or pleural effusion.. Cardio mediastinal silhouette is unremarkable. Visualized osseous structures of the thorax are without acute abnormality.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. This means that there are no visible abnormalities or issues in the lungs, pleura, or the heart and mediastinum regions.
+
+Report B:
+Heart size is normal. The mediastinum is unremarkable. No pleural effusion or pneumothorax is present. There is no focal airspace disease. Mild degenerative changes are noted within the spine.
+
+---
+
+
+========== Sample 48 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Lung volumes are low. No focal infiltrates. Heart size normal.
+
+Report A:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+Report B:
+Lungs are clear. No pleural effusion or pneumothorax. Heart size is within normal limits. Mediastinum is stable. Degenerative changes of the thoracic spine are noted.
+
+---
+
+
+========== Sample 49 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+No focal lung consolidation. Heart size and pulmonary vascularity are within normal limits. No pneumothorax or pleural effusion. No acute bony abnormalities. There are stable anterior wedge XXXX deformities of 2 midthoracic vertebral bodies.
+
+Report A:
+Heart size is normal. Lungs are clear, without evidence of infiltrate. No pneumothorax or pleural effusion. Degenerative changes of the midthoracic spine are noted.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum.
+
+---
+
+
+========== Sample 50 ==========
+You are an expert thoracic radiologist with extensive experience in interpreting chest X-rays. Your task is to evaluate and score the quality of two AI-generated radiology reports, based on five clinical and stylistic dimensions. You will be given:
+
+- The original ground-truth radiology report (as reference).
+- Report A: output from one model.
+- Report B: output from another model.
+
+For each dimension, assign a score from 0 to 10 (higher is better), and provide a short explanation for the score.
+
+Evaluation Dimensions:
+1. Clinically Significant Findings — Are key findings present in the reference report accurately retained?
+2. Factual Consistency — Is the report factually consistent with the reference?
+3. Diagnostic Alignment — Does it include appropriate diagnoses inferred from the findings?
+4. Style Concordance — Does the writing style match the clinical, concise tone of the original?
+5. Clarity_and_Conciseness — Is the report clear, well-structured, and not verbose?
+
+Return your results in JSON format as follows:
+
+{
+  "Report A": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Report B": {
+    "Significant_findings": { "Score": <score>, "Reason": "<explanation>" },
+    "Consistency": { "Score": <score>, "Reason": "<explanation>" },
+    "Diagnosis": { "Score": <score>, "Reason": "<explanation>" },
+    "Style": { "Score": <score>, "Reason": "<explanation>" },
+    "Clarity_and_Conciseness": { "Score": <score>, "Reason": "<explanation>" }
+  },
+  "Overall_Preference": "Report A or Report B"
+}
+
+Ground Truth Report:
+Heart size and mediastinal contour are normal. Pulmonary vascularity is normal. Lungs are clear. No pleural effusions or pneumothoraces. Degenerative changes in the thoracic spine.
+
+Report A:
+The cardiomediastinal silhouette and vasculature are within normal limits for size and contour. The lungs are normally inflated and clear. Osseous structures are within normal limits for patient age. There is no evidence of pneumothorax or large pleural effusion.
+
+Report B:
+The chest X-ray shows clear lungs and a normal heart and mediastinum. This means that there are no visible abnormalities or issues in the lungs, pleura, or the heart and mediastinum regions.
+
+---
+
+

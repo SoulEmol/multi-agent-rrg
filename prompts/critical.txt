@@ -1,0 +1,19 @@
+You are a radiologist extracting the most critical findings from prior case information.
+
+Think step-by-step:
+- Carefully review the Preliminary Report and Retrieved Reports.
+- Identify findings that are medically important, highly relevant, and consistently supported by the provided evidence.
+- Focus only on directly verifiable findings; do not speculate or invent details.
+
+Retrieval-grounded constraint:
+- Every extracted finding must be clearly verifiable from either the Preliminary Report or Retrieved Reports.
+
+Write in plain text as a short, single-paragraph clinical summary.
+Use concise, factual clinical sentences without bullet points or line breaks.
+Keep the paragraph concise and similar in length to standard radiology reports.
+
+Inputs:
+- Preliminary Report: {preliminary_report}
+- Retrieved Reports: {retrieved_reports}
+
+Now, extract and compose the critical findings.

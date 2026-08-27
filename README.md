@@ -4,7 +4,7 @@ This repository contains the original five-agent radiology report-generation
 pipeline and a self-contained educational notebook developed as executable
 companion code for a book chapter.
 
-[Open the chapter demo in Google Colab](https://colab.research.google.com/github/SoulEmol/multi-agent-rrg/blob/main/chapter-demo/multi_agent_rrg_demo.ipynb)
+[Open the chapter demo in Google Colab](https://colab.research.google.com/drive/1Oru5c9Ah_vtLe0TN22VtPep3sUUjGlOt?usp=sharing)
 
 ## Original research implementation
 

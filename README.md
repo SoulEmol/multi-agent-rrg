@@ -6,6 +6,25 @@ companion code for a book chapter.
 
 [Open the chapter demo in Google Colab](https://colab.research.google.com/github/SoulEmol/multi-agent-rrg/blob/main/chapter-demo/multi_agent_rrg_demo.ipynb)
 
+## Original research implementation
+
+The repository root preserves the initial research implementation for historical
+and methodological reference. Its five stages used different infrastructure
+from the chapter notebook:
+
+- the Top-K retrieval agent used OpenCLIP together with a locally trained
+  retrieval checkpoint and dataset-specific JSON files;
+- the General, Critical, and Summarizing agents called an OpenAI-hosted model;
+- the Image Agent called a locally installed LLaVA-Med checkpoint; and
+- the orchestration script contained local filesystem paths for prompts,
+  images, checkpoints, and outputs.
+
+That code documents the original system design, but it is not a turnkey public
+demo because it depends on API credentials, locally prepared weights, and
+controlled or separately obtained data. The self-contained notebook retains
+the same conceptual agent roles while replacing those dependencies with open
+models, synthetic retrieval text, and public teaching images.
+
 ## Chapter companion
 
 The recommended entry point is
@@ -96,11 +115,38 @@ components or generated reports is clinically validated here.
     └── requirements.txt
 ```
 
-## Scope and safety
+## Disclaimer
 
-This repository is intended for research and education. It is not a medical
-device and must not be used for diagnosis, treatment, or clinical
-decision-making.
+This repository and its generated outputs are provided solely for research,
+education, and software demonstration. They are not medical advice, are not a
+medical device, and have not been validated for diagnosis, treatment, triage,
+or any other clinical decision. The models can omit findings, invent findings,
+misinterpret images, or produce inconsistent reports.
+
+Do not submit protected health information or identifiable patient data to this
+demonstration. Any use with clinical or controlled data requires appropriate
+authorization, governance, security controls, expert oversight, and independent
+validation. The authors and contributors make no warranty regarding accuracy,
+fitness for a particular purpose, safety, or clinical performance.
+
+## License
+
+New material under `chapter-demo/` is released under the
+[MIT License](chapter-demo/LICENSE), except for third-party images, model
+weights, software dependencies, and other resources that retain their own
+licenses and terms. Image-specific attribution and licensing are documented in
+[`chapter-demo/sample_data/SOURCES.md`](chapter-demo/sample_data/SOURCES.md).
+
+The historical research code outside `chapter-demo/` is preserved from the
+original project and is **not relicensed** by the chapter-demo MIT License.
+Users are responsible for confirming that they have permission for their
+intended use of that historical code and all third-party components.
+
+## Contact
+
+Questions, reproducibility reports, and corrections are welcome:
+
+**Jinyu Liu** — [jinyuliu@my.unt.edu](mailto:jinyuliu@my.unt.edu)
 
 For permanent chapter citation, archive a versioned release in the UNT Data
 Repository or Zenodo and cite the resulting DOI rather than a moving branch.

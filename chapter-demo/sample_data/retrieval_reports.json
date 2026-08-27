@@ -1,0 +1,10 @@
+[
+  {"id": "demo-normal-01", "report": "Cardiomediastinal silhouette is within normal limits. Lungs are clear. No focal airspace opacity, pleural effusion, or pneumothorax."},
+  {"id": "demo-normal-02", "report": "Heart size is normal. No focal pulmonary opacity or pleural abnormality is identified."},
+  {"id": "demo-normal-03", "report": "The lungs are clear bilaterally. No acute cardiopulmonary abnormality is evident."},
+  {"id": "demo-rul-01", "report": "Focal airspace opacity is present in the right upper lung, suspicious for pneumonia. No pleural effusion."},
+  {"id": "demo-rul-02", "report": "Right upper lobe consolidation is present. Cardiomediastinal silhouette is not enlarged."},
+  {"id": "demo-rul-03", "report": "Patchy right upper lung opacity may represent an infectious airspace process. No pneumothorax."},
+  {"id": "demo-bibasilar-01", "report": "Mild bibasilar linear opacities favor subsegmental atelectatic change. No focal lobar consolidation."},
+  {"id": "demo-edema-01", "report": "Cardiac silhouette is enlarged with bilateral interstitial pulmonary opacities and small pleural effusions."}
+]

@@ -36,7 +36,7 @@ The notebook:
 
 1. installs its dependencies;
 2. sets deterministic seeds;
-3. downloads two openly licensed teaching radiographs;
+3. downloads openly licensed teaching radiographs;
 4. loads openly downloadable models and an embedded synthetic retrieval set;
 5. runs all five agents;
 6. displays every intermediate output;
